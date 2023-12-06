@@ -19,8 +19,18 @@ public class Main {
                 System.out.println(retourner(s));
             }
         } while (!s.equals("1"));
+        arret();
 
+    }
 
+    private static void arret() {
+        if (LocalTime.now().isBefore(LocalTime.of(17, 30, 0)) && LocalTime.now().isAfter(LocalTime.of(6, 0, 0))) {
+            System.out.println("Bonne journée");
+        } else if (LocalTime.now().isBefore(LocalTime.of(21, 30, 0)) && LocalTime.now().isAfter(LocalTime.of(17, 30, 0))) {
+            System.out.println("Bonne soirée");
+        } else {
+            System.out.println("Bonne nuit");
+        }
     }
 
     private static void demarrage() {
