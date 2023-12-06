@@ -1,21 +1,11 @@
-package org.example;
-
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
 
-        if (LocalTime.now().isBefore(LocalTime.of(17, 30, 0)) && LocalTime.now().isAfter(LocalTime.of(6, 0, 0))) {
-            System.out.println("Bonjour");
-        } else if (LocalTime.now().isBefore(LocalTime.of(21, 30, 0)) && LocalTime.now().isAfter(LocalTime.of(17, 30, 0))) {
-            System.out.println("Bonsoir");
-        } else {
-            System.out.println("Bonne nuit");
-        }
+        demarrage();
 
         String s;
         do {
@@ -31,6 +21,16 @@ public class Main {
         } while (!s.equals("1"));
 
 
+    }
+
+    private static void demarrage() {
+        if (LocalTime.now().isBefore(LocalTime.of(17, 30, 0)) && LocalTime.now().isAfter(LocalTime.of(6, 0, 0))) {
+            System.out.println("Bonjour");
+        } else if (LocalTime.now().isBefore(LocalTime.of(21, 30, 0)) && LocalTime.now().isAfter(LocalTime.of(17, 30, 0))) {
+            System.out.println("Bonsoir");
+        } else {
+            System.out.println("Bonne nuit");
+        }
     }
 
     private static StringBuilder retourner(String s) {
