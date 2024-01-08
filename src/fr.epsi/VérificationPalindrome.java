@@ -1,4 +1,4 @@
-package fr.enzosandre;
+package fr.epsi;
 
 public class VérificationPalindrome {
     private final LangueInterface langue;

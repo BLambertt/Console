@@ -1,4 +1,4 @@
-package fr.enzosandre;
+package fr.epsi;
 
 public class Expressions {
     public static final String BienDit = "Bien dit !";

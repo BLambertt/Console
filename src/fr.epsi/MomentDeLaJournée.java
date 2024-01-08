@@ -1,4 +1,4 @@
-package fr.enzosandre;
+package fr.epsi;
 
 public class MomentDeLaJournée {
     public static MomentDeLaJournée Matin = new MomentDeLaJournée("Matin");

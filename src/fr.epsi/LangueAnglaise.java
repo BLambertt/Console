@@ -1,4 +1,4 @@
-package fr.enzosandre;
+package fr.epsi;
 
 public class LangueAnglaise implements LangueInterface {
     @Override
